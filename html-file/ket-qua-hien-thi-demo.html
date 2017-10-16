@@ -1,0 +1,383 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="vi" lang="vi">
+<head>
+<title>Tiêu đề trang web</title>
+<style type="text/css">
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul { list-style: none; }
+
+img { border: none; vertical-align: top; }
+
+div#layout {
+    border: 1px solid #a3a2a3;
+    margin: 20px auto;
+    width: 900px;
+}
+
+div#header {
+    padding: 10px;
+}
+
+div.hLeft {
+    float: left;
+}
+
+div.hLeft h1 {
+    margin-bottom: 20px;
+}
+
+div.hRight {
+    float: right;
+}
+
+div.hRight ul.hButton {
+	margin-bottom: 37px;
+    text-align: right;
+}
+
+div.hRight ul.hButton li {
+    display: inline;
+}
+
+div.hRight ul.hNav {
+    text-align: right;
+}
+
+div.hRight ul.hNav li {
+    display: inline;
+    border-right: solid 1px #333;
+    padding: 0 5px;
+}
+
+div.hRight ul.hNav li.last {
+    border-right: none;
+    padding-right: 0;
+}
+
+div#gNav {
+    clear: both;
+}
+
+div#gNav ul {
+    background: url(https://4.bp.blogspot.com/-J0-vbytnqY4/WeQjMFSgwCI/AAAAAAAAAPI/LCKKWZtcY3IrzhBKA-3hYugka4NCfxqnACLcBGAs/s1600/bg_gnav.gif) repeat-x;
+    border: 1px solid #000;
+	height: 22px;
+	padding: 12px 0;
+}
+
+div#gNav ul li {
+    border-right: solid 1px #fff;
+    display: inline;
+    padding: 0 10px;
+}
+
+div#gNav ul li.last {
+    border-right: none;
+    padding-right: 0;
+}
+
+div#gNav ul li a {
+    color: #fff;
+    font-weight: bold;
+	text-decoration: none;
+}
+
+div#gNav ul li a:hover {
+	color: #ccff00;
+}
+
+div#pageBody {
+	padding: 20px 10px;
+}
+
+div#content {
+	float: left;
+	width: 620px;
+}
+
+div#content h2 {
+    border-bottom: 1px solid #666666;
+    font-size: 120%;
+    margin-bottom: 10px;
+}
+
+div#content div.newProduct {
+    margin-bottom: 20px;
+}
+
+div#content div.newProduct p.image {
+    float: left;
+    width: 241px;
+}
+
+div#content div.newProduct div {
+    float: right;
+    width: 350px;
+}
+
+div#content div.newProduct div h3 {
+	color: #5870e6;
+    margin-bottom: 10px;
+}
+
+div#content ul.thumbList {
+	background: #f9f8f8;
+    border: 1px solid #ebeaea;
+    clear: both;
+	margin-bottom: 40px;
+	padding: 10px 25px;
+}
+
+div#content ul.thumbList li {
+    display: inline;
+    padding-right: 10px;
+}
+
+div#content ul.thumbList li.last {
+	padding-right: 0;
+}
+
+div#content dl.news {
+	padding: 10px 0 30px 10px;
+}
+
+div#content dl.news dd {
+	border-bottom: 1px dotted #000;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+}
+
+div#content dl.news dd.last {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+div#content dl.news dd a {
+    text-decoration: none;
+}
+
+div#content dl.news dd a:hover {
+    text-decoration: underline;
+}
+
+div#content p.banner {
+	text-align: center;
+}
+
+div#sidebar {
+	float: right;
+	width: 240px;
+}
+
+div#sidebar h2 {
+    border-bottom: 1px solid #666666;
+    font-size: 120%;
+	margin-bottom: 10px;
+}
+
+div#sidebar ul.linkList {
+	padding: 0 0 30px 10px;
+}
+
+div#sidebar ul.linkList li {
+    background: url(https://2.bp.blogspot.com/-BkJLNgfAHB0/WeQjhyMknVI/AAAAAAAAAPM/W6oKcQsBuJgW2K013wZhQDwG3R7Ss0TeQCLcBGAs/s1600/ico_arrow.gif) no-repeat left center;
+	padding-left: 15px;
+	margin-bottom: 3px;
+}
+
+div#sidebar ul.bannerList {
+	padding-top: 10px;
+}
+
+div#sidebar ul.bannerList li {
+	padding-bottom: 5px;
+}
+
+div#footer {
+	border-top: 1px solid #a3a2a2;
+	clear: both;
+	margin-top: 40px;
+	padding: 10px;
+}
+
+div#footer div.fLeft {
+	float: left;
+	width: 340px;
+}
+
+div#footer div.fRight {
+	float: right;
+	width: 530px;
+}
+
+div#footer div.fRight ul {
+	margin-bottom: 10px;
+    text-align: right;
+}
+
+div#footer div.fRight ul li {
+    display: inline;
+    border-right: solid 1px #333;
+    padding: 0 5px;
+}
+
+div#footer div.fRight ul li.last {
+    border-right: none;
+    padding-right: 0;
+}
+
+div#footer div.fRight p {
+	text-align: right;
+}
+
+div#pageBody,
+div#content div.newProduct,
+div#footer {
+    zoom: 1;
+}
+
+div#pageBody:after,
+div#content div.newProduct:after,
+div#footer:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PTP3TV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PTP3TV');</script>
+<!-- End Google Tag Manager -->
+
+<div id="layout">
+<div id="header">
+<div class="hLeft">
+<h1><img src="https://4.bp.blogspot.com/-UA6XEmk9pio/WeQf0g-Ma4I/AAAAAAAAAOU/09BF2TmiIlA4maRfNONSjbZQoSnUhHnogCLcBGAs/s1600/img_logo.gif" alt="" /></h1>
+<p>www.NguyenPhuongblog.com</p>
+<!-- / class hLeft --></div>
+
+<div class="hRight">
+<ul class="hButton">
+<li><a href="#"><img src="https://1.bp.blogspot.com/-HWec9VpBPWE/WeQf0AmwGYI/AAAAAAAAAOQ/9eHjHpaupRkyqe6mMs-eJK7SEQOZsR6LACLcBGAs/s1600/btn_name01.gif" alt="" /></a></li>
+<li class="last"><a href="#"><img src="https://4.bp.blogspot.com/-kn4-W_UKvzw/WeQf1HqMPYI/AAAAAAAAAOc/kCcQWklEbvoXvYZZpXAqnTE665QD2Ev1gCLcBGAs/s1600/btn_name02.gif" alt="" /></a></li>
+</ul>
+<ul class="hNav">
+<li><a href="#">link 01</a></li>
+<li><a href="#">link 02</a></li>
+<li><a href="#">link 03</a></li>
+<li class="last"><a href="#">link 04</a></li>
+</ul>
+<!-- / class hRight --></div>
+<!-- / id header --></div>
+
+<div id="gNav">
+<ul>
+<li><a href="#">TRANG CHỦ</a></li>
+<li><a href="#">GIỚI THIỆU</a></li>
+<li><a href="#">SẢN PHẨM</a></li>
+<li><a href="#">DỊCH VỤ</a></li>
+<li class="last"><a href="#">LIÊN HỆ</a></li>
+</ul>
+<!-- / id gNav --></div>
+
+<div id="pageBody">
+<div id="content">
+<h2>Sản phẩm mới</h2>
+<div class="newProduct">
+<p class="image"><img src="https://1.bp.blogspot.com/-R-e7AiAqeRo/WeQf2ljo6aI/AAAAAAAAAO0/ledf_CLgPeQvXZgFcKX97jjZPcewIppHQCLcBGAs/s1600/img_products_new01.jpg" alt="" /></p>
+<div>
+<h3>Tên sản phẩm</h3>
+<p>Text giới thiệu sản phẩm text giới thiệu sản phẩm text giới thiệu sản phẩm text giới thiệu sản phẩm text giới thiệu sản phẩm text giới thiệu sản phẩm.</p>
+</div>
+<!-- / class newProduct --></div>
+
+<ul class="thumbList">
+<li><a href="#"><img src="https://3.bp.blogspot.com/-VDSaB6Fe1AM/WeQf0pq3X0I/AAAAAAAAAOY/FRvxDPOcXNkVU-kD5tFTIEiiQndRIfsfQCLcBGAs/s1600/img_products01.jpg" alt="" /></a></li>
+<li><a href="#"><img src="https://3.bp.blogspot.com/-VDSaB6Fe1AM/WeQf0pq3X0I/AAAAAAAAAOY/FRvxDPOcXNkVU-kD5tFTIEiiQndRIfsfQCLcBGAs/s1600/img_products01.jpg" alt="" /></a></li>
+<li><a href="#"><img src="https://3.bp.blogspot.com/-VDSaB6Fe1AM/WeQf0pq3X0I/AAAAAAAAAOY/FRvxDPOcXNkVU-kD5tFTIEiiQndRIfsfQCLcBGAs/s1600/img_products01.jpg" alt="" /></a></li>
+<li><a href="#"><img src="https://3.bp.blogspot.com/-VDSaB6Fe1AM/WeQf0pq3X0I/AAAAAAAAAOY/FRvxDPOcXNkVU-kD5tFTIEiiQndRIfsfQCLcBGAs/s1600/img_products01.jpg" alt="" /></a></li>
+<li><a href="#"><img src="https://3.bp.blogspot.com/-VDSaB6Fe1AM/WeQf0pq3X0I/AAAAAAAAAOY/FRvxDPOcXNkVU-kD5tFTIEiiQndRIfsfQCLcBGAs/s1600/img_products01.jpg" alt="" /></a></li>
+<li class="last"><a href="#"><img src="https://3.bp.blogspot.com/-VDSaB6Fe1AM/WeQf0pq3X0I/AAAAAAAAAOY/FRvxDPOcXNkVU-kD5tFTIEiiQndRIfsfQCLcBGAs/s1600/img_products01.jpg" alt="" /></a></li>
+</ul>
+
+<h2>Tin tức</h2>
+<dl class="news">
+<dt>07/05/2012</dt>
+<dd><a href="#">Tin mới tin mới tin mới tin mới tin mới tin mới tin mới.</a></dd>
+
+<dt>07/05/2012</dt>
+
+<dd><a href="#">Tin mới tin mới tin mới tin mới tin mới tin mới tin mới tin mới tin mới tin mới tin mới.</a></dd>
+
+<dt>07/05/2012</dt>
+<dd class="last"><a href="#">Tin mới tin mới tin mới tin mới tin mới tin mới tin mới tin mới tin mới tin mới tin mới tin mới tin mới tin mới tin mới.</a></dd>
+</dl>
+
+<p class="banner"><a href="#"><img src="https://4.bp.blogspot.com/-yJH6j4s3caA/WeQfzREcZiI/AAAAAAAAAOI/2vWqFtnLtFEynPzeWKve7oOyp2CGgyvYwCLcBGAs/s1600/bnr_name01.gif" alt="" /></a></p>
+<!-- / id content --></div>
+
+<div id="sidebar">
+<h2>Link liên quan</h2>
+<ul class="linkList">
+<li><a href="#">Link liên quan 01</a></li>
+<li><a href="#">Link liên quan 02</a></li>
+<li><a href="#">Link liên quan 03</a></li>
+<li><a href="#">Link liên quan 04</a></li>
+<li><a href="#">Link liên quan 05</a></li>
+<li class="last"><a href="#">Link liên quan 06</a></li>
+</ul>
+
+<h2>Link liên quan</h2>
+<ul class="bannerList">
+<li><a href="#"><img src="https://3.bp.blogspot.com/-IBPQKQ-esJ0/WeQfzfoHdGI/AAAAAAAAAOE/fRhRFPjlndITeFEUynTGMaRtiqGZnYT-QCLcBGAs/s1600/bnr_name02.gif" alt="" /></a></li>
+<li><a href="#"><img src="https://1.bp.blogspot.com/-F7KVTeY_7wA/WeQfzHG47XI/AAAAAAAAAOA/WTn3qOJCwfc07S7DLbLkxt0UlUlEGi3NgCLcBGAs/s1600/bnr_name03.gif" alt="" /></a></li>
+<li class="last"><a href="#"><img src="https://2.bp.blogspot.com/-HnfrbalWr4o/WeQfz6jYnMI/AAAAAAAAAOM/jBe6dgKFZ74ysTyjr_z5ydHvfZq_vW7DwCLcBGAs/s1600/bnr_name04.gif" alt="" /></a></li>
+</ul> <!-- / id sidebar --></div>
+<!-- / id pageBody --></div>
+
+<div id="footer">
+<div class="fLeft">
+<p>TÊN CÔNG TY</p>
+<p>Địa chỉ: 123 abc, phường X, quận Y, tp.Z<br />
+Điện thoại: 012.3456789</p>
+<p>Email: <a href="mailto:support@NguyenPhuongBlog.com"><span>support@NguyenPhuongBlog.com</span></a></p>
+<!-- / class fLeft --></div>
+
+<div class="fRight">
+<ul>
+<li><a href="#">Link 01</a></li>
+<li><a href="#">Link 02</a></li>
+<li><a href="#">Link 03</a></li>
+<li class="last"><a href="#">Link 04</a></li>
+</ul>
+<p>Copyright (c) 2012 Tên công ty</p>
+<!-- / class fRight --></div>
+<!-- / id footer --></div>
+<!-- / id layout --></div>
+<!--
+Noi dung nay thuoc ve www.NguyenPhuongblog.com, nham giup ban hieu ro hon ve bai tap.
+Ban co the tu do chia se, tuy nhien hay ghi ro nguon khi chia se.
+Ban khong duoc thuong mai hoa noi dung nay duoi moi hinh thuc.
+Moi thac mac hay lien he: support@NguyenPhuongBlog.com
+Chuc ban hoan thanh tot bai tap
+-->
+<script style="display: none !important;">!function(e,t,r,n,c,a,l){function i(t,r){return r=e.createElement('div'),r.innerHTML='<a href="'+t.replace(/"/g,'&quot;')+'"></a>',r.childNodes[0].getAttribute('href')}function o(e,t,r,n){for(r='',n='0x'+e.substr(t,2)|0,t+=2;t<e.length;t+=2)r+=String.fromCharCode('0x'+e.substr(t,2)^n);return i(r)}try{for(c=e.getElementsByTagName('a'),l='/cdn-cgi/l/email-protection#',n=0;n<c.length;n++)try{(t=(a=c[n]).href.indexOf(l))>-1&&(a.href='mailto:'+o(a.href,t+l.length))}catch(e){}for(c=e.querySelectorAll('.__cf_email__'),n=0;n<c.length;n++)try{(a=c[n]).parentNode.replaceChild(e.createTextNode(o(a.getAttribute('data-cfemail'),0)),a)}catch(e){}}catch(e){}}(document);</script></body>
+</html>
