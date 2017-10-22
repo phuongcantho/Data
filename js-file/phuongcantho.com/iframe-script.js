@@ -85,8 +85,8 @@ $(function() {
 				"};" +
 				"</script>" );
 		var iframe = document.createElement( "iframe" );
-		iframe.width = "98%";
-		iframe.height = output.attr( "data-height" ) || 'auto';
+		iframe.width = "80%";
+		iframe.height = output.attr( "data-height" ) || '388px';
 		output.append( iframe );
 
 		var doc = (iframe.contentWindow || iframe.contentDocument).document;
